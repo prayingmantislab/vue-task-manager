@@ -1,0 +1,26 @@
+<template>
+  <header>
+    <h1>{{ title }}</h1>
+    <Button text="Add Task" color="mistygreen" />
+  </header>
+</template>
+
+<script>
+import Button from './Button';
+export default {
+  name: 'Header',
+  components: { Button },
+  props: {
+    title: String,
+  },
+};
+</script>
+
+<style scoped>
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  align-items: center;
+}
+</style>
